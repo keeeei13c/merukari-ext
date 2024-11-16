@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "メルカリ売上管理",
+  "version": "1.0",
+  "description": "メルカリの売上データを取得します",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "downloads",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://jp.mercari.com/*"
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/background.js"
+  }
+}

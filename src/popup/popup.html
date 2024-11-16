@@ -1,0 +1,53 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    .date-selector {
+      margin-bottom: 10px;
+    }
+    select {
+      margin: 5px;
+      padding: 3px;
+    }
+    button {
+      margin: 5px;
+      padding: 5px 10px;
+    }
+    #status {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>メルカリ売上管理</h3>
+  <div class="date-selector">
+    <select id="yearSelect">
+      <option value="2025">2025年</option>
+      <option value="2024">2024年</option>
+    </select>
+    <select id="monthSelect">
+      <option value="1">1月</option>
+      <option value="2">2月</option>
+      <option value="3">3月</option>
+      <option value="4">4月</option>
+      <option value="5">5月</option>
+      <option value="6">6月</option>
+      <option value="7">7月</option>
+      <option value="8">8月</option>
+      <option value="9">9月</option>
+      <option value="10">10月</option>
+      <option value="11">11月</option>
+      <option value="12">12月</option>
+    </select>
+  </div>
+  <button id="getData">データ取得</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
